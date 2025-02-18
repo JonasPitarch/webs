@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detective Bureau del San Andreas Police Department (SAPD)">
+    <meta name="author" content="San Andreas Police Department">
+    <title>Detective Bureau - SAPD</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Fondo oscuro profesional */
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #101010;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 120px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
+
+        /* Contenedor principal */
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Secciones con mejor estructura */
+        .section {
+            background-color: #222;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.1);
+        }
+
+        .section p, .missions ul {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Lista de áreas de investigación */
+        .missions ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .missions li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .missions li::before {
+            content: '🕵️‍♂️';
+            margin-right: 10px;
+        }
+
+        .missions li:hover {
+            transform: translateX(5px);
+            color: #d4af37;
+        }
+
+        /* Galería de Casos */
+        .case-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .case {
+            background-color: #292929;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .case img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .case h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .case p {
+            font-size: 1rem;
+            margin-top: 5px;
+            color: #bbb;
+        }
+
+        .case:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
+        }
+
+        /* Botón de Navegación */
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #101010;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .back-link a:hover {
+            background-color: #b8952e;
+            transform: translateY(-3px);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #101010;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 12px;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .case {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+    <img src="dblogo.webp" alt="Detective Bureau Logo" class="logo">
+    <h1>Detective Bureau</h1>
+</header>
+
+<!-- Contenido Principal -->
+<div class="container">
+
+    <section class="section">
+        <h2>Sobre la Unidad de Detectives</h2>
+        <p>El <strong>Detective Bureau</strong> del SAPD es responsable de la investigación de crímenes complejos, incluyendo homicidios, crimen organizado y delitos financieros. Nuestros detectives trabajan con inteligencia, tecnología avanzada y análisis forense para resolver los casos más difíciles.</p>
+    </section>
+
+    <section class="section missions">
+        <h2>Áreas de Investigación</h2>
+        <ul>
+            <li>Investigación de Homicidios</li>
+            <li>Crimen Organizado</li>
+            <li>Delitos Financieros</li>
+            <li>Casos de Alto Perfil</li>
+            <li>Análisis Forense</li>
+        </ul>
+    </section>
+
+    <section class="section cases">
+        <h2>Casos Destacados</h2>
+        <div class="case-gallery">
+            <div class="case">
+                <img src="redada.jpg" alt="Caso 1">
+                <h3>Operación Sombras</h3>
+                <p>Desmantelamiento de una red de tráfico de armas.</p>
+            </div>
+            <div class="case">
+                <img src="coche.png" alt="Caso 2">
+                <h3>Caso Cars</h3>
+                <p>Investigación de robos de vehículos de alta gama.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Botón de Navegación -->
+<div class="back-link">
+    <a href="detectives.html">Detectives</a>
+</div>
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2025 San Andreas Police Department - Detective Bureau. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

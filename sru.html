@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conozca la Street Racing Unit del San Andreas Police Department (SAPD).">
+    <meta name="author" content="San Andreas Police Department">
+    <title>Street Racing Unit - SAPD</title>
+    <style>
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #f5f5f5; /* Texto claro */
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #000;
+    color: #ff0000; /* Rojo deportivo */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Contenido principal */
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff0000; /* Rojo llamativo */
+}
+
+/* Secciones */
+.intro, .missions, .collage {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.intro p, .missions ul {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Lista de misiones */
+.missions ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.missions li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.missions li::before {
+    content: '🏎️';
+    margin-right: 10px;
+}
+
+/* Galería de imágenes (Collage) */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<!--Encabezado principal de la página web-->
+<header>
+    <img src="logosru.webp" alt="Street Racing Unit Logo" class="logo">
+    <h1>Street Racing Unit</h1>
+</header>
+<!--Diferentes secciones de la web donde ponemos más información-->
+<div class="container">
+    <section class="intro">
+        <h2>Sobre la SRU</h2>
+        <p>La **Street Racing Unit** (SRU) es una división del SAPD dedicada a combatir las carreras ilegales y promover la seguridad vial. Nuestros agentes altamente capacitados utilizan vehículos de alto rendimiento y tácticas avanzadas para mantener el orden en las calles.</p>
+    </section>
+
+    <section class="missions">
+        <h2>Misiones Especiales</h2>
+        <ul>
+            <li>Persecuciones a alta velocidad</li>
+            <li>Control de carreras ilegales</li>
+            <li>Investigación de redes de tráfico de automóviles</li>
+            <li>Trabajo conjunto con unidades de inteligencia</li>
+        </ul>
+    </section>
+<!--Collage de imagenes de la SRU-->
+    <section class="collage">
+        <h2>Galería de Imágenes</h2>
+        <div class="image-gallery">
+            <img src="srucars.webp" alt="Coche patrulla de alto rendimiento">
+            <img src="persecu.webp" alt="Persecución policial en la ciudad">
+            <img src="sru.PNG" alt="Carrera ilegal en curso">
+            <img src="sru_4.PNG" alt="Unidad SRU en acción">
+            <img src="sru_6.PNG" alt="Agentes revisando vehículos">
+            <img src="coquette.webp" alt="Interceptor Policial">
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 San Andreas Police Department - Street Racing Unit. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
